@@ -1,9 +1,14 @@
 /* element selectors by parent */
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* class in alpha order */
+.bgc-boringblue {
+  background-color: rgb(37, 137, 189);
+}
+
 .bgc-lightgray {
   background-color: lightgray;
 }
@@ -16,10 +21,25 @@ body {
   background-color: steelblue;
 }
 
+.d-f {
+  display: flex;
+}
+
+.mt {
+  margin-top: 1.5rem;
+}
+
 .p {
   padding: 1.5rem;
 }
 
 .w-100 {
   width: 100%;
+}
+
+/* media queary */
+@media (min-width: 768px) {
+  .d-f\@lrg {
+    display: flex;
+  }
 }
