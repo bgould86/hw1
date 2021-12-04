@@ -25,6 +25,18 @@ body {
   display: flex;
 }
 
+.jc-sb {
+  justify-content: space-between;
+}
+
+.lis-n {
+  list-style: none;
+}
+
+.m0 {
+  margin: 0;
+}
+
 .mt {
   margin-top: 1.5rem;
 }
