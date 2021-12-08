@@ -1,7 +1,17 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 /* element selectors by parent */
 body {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
 }
 
 a {
@@ -9,7 +19,6 @@ a {
 }
 
 /* class in alpha order */
-
 .ai-c {
   align-items: center;
 }
@@ -38,12 +47,28 @@ a {
   display: flex;
 }
 
+.h-100vh {
+  height: 100vh;
+}
+
 .ff-impact {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+.fg-1 {
+  flex-grow: 1;
+}
+
 .fw-700 {
   font-weight: 700;
+}
+
+.fx-1 {
+  flex: 1 0 0;
+}
+
+.fxd-c {
+  flex-direction: column;
 }
 
 .fz-2 {
@@ -70,6 +95,10 @@ a {
   margin-top: 1.5rem;
 }
 
+.mw-60 {
+  max-width: 60rem;
+}
+
 .p0 {
   padding: 0;
 }
@@ -78,15 +107,32 @@ a {
   padding: 1.5rem;
 }
 
+.p\+ {
+  padding: 3rem;
+}
+
+.pl {
+  padding-left: 1.5rem;
+}
+
 .w-100 {
   width: 100%;
 }
 
-/* media queary */
+/* media query */
 @media (min-width: 768px) {
   .d-f\@lrg {
     display: flex;
   }
+
+  .fg-1\@lrg {
+    flex-grow: 1;
+  }
+
+  .fg-3\@lrg {
+    flex-grow: 3;
+  }
+
   .ml\@lrg {
     margin-left: 1.5rem;
   }
